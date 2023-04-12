@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Statistics from stat.moon-bot</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.3.0/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.2/js/uikit.min.js"></script>
+</head>
+<body>
+
+<div class="containe">
+    <div class="row">
+        <div class="col-lg-10 mt-5 mb-5">
+            <table id="out_trades" class="table table-bordered uk-table dataTable no-footer" style="width: 100%">
+                <thead>
+                <tr role="row">
+                    <th>UserId</th>
+                    <th>TelegramUsername</th>
+                    <th>Time UTC</th>
+                    <th>Coin</th>
+                    <th>BuyPrice</th>
+                    <th>SellPrice</th>
+                    <th>OrderSize, $</th>
+                    <th>Profit, $</th>
+                    <th>Profit, %</th>
+                    <th>Trade</th>
+                    <th>Type</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" th:src="@{/socket.js}"></script>
+<script>
+</script>
+
+</body>
+</html>

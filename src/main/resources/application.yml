@@ -1,0 +1,22 @@
+server:
+  port: ${PORT:8080}
+
+app:
+  moon-trades-url: wss://stat.moon-bot.com/exchange
+  local-url: ws://localhost:${PORT:8080}/local-websocket
+
+telegram:
+  enabled: false
+  telegram-api-url: https://api.telegram.org
+  token: ${TOKEN:asdf}
+  monitoring-chat-id: ${MONITORING_CHAT_IR:-123}
+  is-monitoring: true
+  chat-ids:
+    - ${MONITORING_CHAT_IR:-123}
+
+logging:
+  level:
+    ru.apexman: INFO
+#    org.springframework.messaging.simp: TRACE
+#    org.springframework.messaging: TRACE
+#    org.springframework.web.socket: TRACE
